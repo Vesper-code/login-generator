@@ -13,6 +13,12 @@ public class LoginGeneratorTest {
     private LoginGenerator loginG = new LoginGenerator(loginService);
 
     @Test
+    public void testCT() {
+        loginG.generateLoginForNomAndPrenom("Du", "Paul");
+        assertTrue(loginService.loginExists("PDU"));
+    }
+
+    @Test
     public void testCT1() {
         loginG.generateLoginForNomAndPrenom("Durand", "Paul");
         assertTrue(loginService.loginExists("PDUR"));
