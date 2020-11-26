@@ -29,6 +29,7 @@ public class LoginServiceTest {
         List<String> list = loginS.findAllLoginsStartingWith("q");
         assertTrue(list.contains("quent"));
         assertFalse(list.contains("vesper"));
+        assertFalse(list.contains("vesp"));
     }
     @Test
     public void testFindAllLogins() {
