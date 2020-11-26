@@ -31,6 +31,7 @@ public class LoginServiceTest {
         assertFalse(list.contains("vesper"));
         assertFalse(list.contains("vesp"));
     }
+
     @Test
     public void testFindAllLogins() {
         List<String> list = loginS.findAllLogins();
